@@ -1,0 +1,47 @@
+Package: stagelife
+Type: Package
+Title: Random Number Generation and Inferences for Two-Stage Life-Testing Data
+Version: 0.1.0
+Authors@R: person("Vikas Kumar", "Sharma", email = "vksharma@bhu.ac.in", role = c("aut", "cre"))
+Description: Provides random number generation, estimation, and hypothesis
+    testing for two-stage life-testing experiments in which units begin on
+    a baseline stress and, at a fixed or random change point, some or all
+    surviving units move to an elevated stress ("stage life testing"),
+    following the cumulative-exposure model of Laumen and Cramer (2019),
+    "Stage life testing", <doi:10.1002/nav.21874>. Twelve baseline lifetime
+    distributions are supplied (Weibull, Power Lindley, Exponentiated Lindley,
+    Exponentiated Exponential, Marshall-Olkin Exponential, Lomax,
+    Exponentiated Teissier, Log-Logistic, Chen, Log-normal, Gamma, and Power
+    Muth/Power Teissier) together with three parameter-sharing cases
+    ('common', 'shape1', 'shape11'). The package implements data simulation
+    under both the fixed-proportion 'typeP' and fixed-count 'typeM' rules
+    and the simple-step-stress special case, maximum likelihood estimation
+    with a Nelder-Mead/BFGS hybrid optimiser, asymptotic (Wald) and
+    non-parametric/parametric bootstrap confidence
+    intervals (including log-scale variants that guarantee a positive
+    interval), a stage-1-observation planning probability, Kolmogorov-Smirnov
+    goodness-of-fit testing with a parametric-bootstrap correction for
+    estimated parameters, likelihood-ratio and information criteria for
+    nested/non-nested model comparison, and diagnostic plots (fitted
+    CDF/survival, P-P, Q-Q).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports:
+    compiler,
+    ggplot2,
+    graphics,
+    lamW,
+    parallel,
+    stats
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/vksharma-bhu/Stagelife
+BugReports: https://github.com/vksharma-bhu/Stagelife/issues
+Config/roxygen2/version: 8.1.0
+Roxygen: list(markdown = TRUE)

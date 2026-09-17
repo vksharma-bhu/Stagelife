@@ -1,0 +1,30 @@
+citHeader("To cite the 'stagelife' package in publications, please use:")
+
+bibentry(
+  bibtype  = "Manual",
+  title    = "stagelife: Inference for Two-Stage (Step-Stress / Partially Accelerated) Life Tests",
+  author   = person("Vikas Kumar", "Sharma", email = "vksharma@bhu.ac.in"),
+  year     = "2026",
+  note     = sprintf("R package version %s", meta$Version),
+  url      = "https://github.com/vksharma-bhu/Stagelife"
+)
+
+bibentry(
+  bibtype  = "Article",
+  title    = "Stage life testing",
+  author   = c(person("Benjamin", "Laumen"), person("Erhard", "Cramer")),
+  journal  = "Naval Research Logistics",
+  year     = "2019",
+  volume   = "66",
+  pages    = "632--647",
+  doi      = "10.1002/nav.21874"
+)
+
+citFooter(
+  "The two-stage cumulative-exposure methodology implemented here follows ",
+  "the stage life testing framework of Laumen and Cramer (2019); please ",
+  "cite that article for the underlying methodology in addition to the ",
+  "package itself. See the package vignette for a discussion of which ",
+  "parts of this package reproduce the paper exactly, which generalise ",
+  "it, and which are not (yet) covered."
+)
